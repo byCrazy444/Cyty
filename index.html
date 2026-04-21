@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Базовые настройки кодировки, адаптивности и подключение локальных файлов -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный сайт о муниципии Бельцы: история, места, медиа, контакты и структура проекта.">
+    <link rel="stylesheet" href="css/style.css?v=20260421">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="js/script.js" defer></script>
+    <title>Бельцы - Главная</title>
+</head>
+<body id="top">
+    <noscript class="noscript-msg">Для интерактивных элементов сайта включите JavaScript в браузере.</noscript>
+
+    <!-- Семантическая шапка с брендом и общей навигацией для всех страниц -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Официальный логотип сайта Бельцы">
+                <span>Гид по Бельцам</span>
+            </a>
+
+            <nav id="siteNav" class="site-nav" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="pages/despre.html">О городе</a>
+                <a href="pages/dostoprimechatel.html">Места</a>
+                <a href="pages/index.html">Инфо и медиа</a>
+                <a href="pages/contacte.html">Контакты</a>
+            </nav>
+
+            <button id="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero-блок с главным сообщением и быстрыми действиями -->
+        <section class="hero">
+            <div class="container hero-content reveal">
+                <h1>Бельцы - город, открытый для образования, культуры и гостей</h1>
+
+                <div class="hero-tools">
+                    <a class="action-btn" href="pages/index.html">Смотреть подробную информацию</a>
+                    <a class="ghost-btn" href="pages/despre.html">О городе</a>
+                </div>
+
+                <p class="small-note">Локальное время (JavaScript): <strong data-current-time>--:--</strong></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Общий футер: внешняя ссылка и динамические метаданные -->
+    <footer>
+        <div class="container footer-inner">
+            <span>Бельцы <span class="year"></span></span>
+            <span class="footer-meta">Локальных посещений в этом браузере: <strong data-visit-counter>0</strong></span>
+            <a class="footer-link" target="_blank" rel="noopener noreferrer" href="https://balti.md/">Официальный портал balti.md</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Общие данные страницы и подключение CSS/JS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информационная таблица, видео-ресурсы и полезные данные о Бельцах.">
+    <link rel="stylesheet" href="../css/style.css?v=20260421">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/script.js" defer></script>
+    <title>Бельцы - Инфо и медиа</title>
+</head>
+<body id="top">
+    <noscript class="noscript-msg">Для интерактивных элементов сайта включите JavaScript в браузере.</noscript>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <img class="logo" src="../images/logo.png" alt="Официальный логотип сайта Бельцы">
+                <span>Гид по Бельцам</span>
+            </a>
+
+            <nav id="siteNav" class="site-nav" aria-label="Основная навигация">
+                <a href="../index.html">Главная</a>
+                <a href="../pages/despre.html">О городе</a>
+                <a href="../pages/dostoprimechatel.html">Места</a>
+                <a href="../pages/index.html">Инфо и медиа</a>
+                <a href="../pages/contacte.html">Контакты</a>
+            </nav>
+
+            <button id="hamburger" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Внутренние якоря для быстрой навигации по странице -->
+        <section class="content-block">
+            <div class="container">
+                <h1 class="centered">Полезная информация и медиа</h1>
+
+                <div class="anchor-nav">
+                    <a href="#facts">Факты</a>
+                    <a href="#table">Таблица</a>
+                    <a href="#media">Видео</a>
+                    <a href="#license">Права на медиа</a>
+                </div>
+
+                <article id="facts" class="info-block reveal">
+                    <h2>Факты о Бельцах</h2>
+                    <p>Нажмите кнопку ниже, чтобы увидеть случайный факт о городе.</p>
+                    <button type="button" class="action-btn" data-random-fact>Показать случайный факт</button>
+                    <p id="fact-output" class="status" aria-live="polite">Факт появится здесь.</p>
+                </article>
+
+                <article id="table" class="info-block reveal">
+                    <h2>Данные в табличном формате</h2>
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Показатель</th>
+                                    <th>Значение</th>
+                                    <th>Примечание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Регион</td>
+                                    <td>Север</td>
+                                    <td>Ключевой городской узел</td>
+                                </tr>
+                                <tr>
+                                    <td>Административный статус</td>
+                                    <td>Муниципий</td>
+                                    <td>Региональный центр</td>
+                                </tr>
+                                <tr>
+                                    <td>Тип транспорта</td>
+                                    <td>Автомобильный и железнодорожный</td>
+                                    <td>Связи с соседними городами</td>
+                                </tr>
+                                <tr>
+                                    <td>Образовательная функция</td>
+                                    <td>Лицеи и колледжи</td>
+                                    <td>Активности для школьников и студентов</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <article id="media" class="info-block reveal">
+                    <h2>Медиа-ресурсы</h2>
+                    <div class="media-grid">
+                        <div class="media-card">
+                            <h3>Локальное видео</h3>
+                            <video controls preload="metadata" poster="../images/index.png">
+                                <source src="../media/balti.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает элемент видео.
+                            </video>
+                            <p class="small-note">Обязательный элемент <code>&lt;video&gt;</code> включен по требованиям.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="license" class="info-block reveal">
+                    <h2>Авторские права на медиа</h2>
+                    <ul class="info-list">
+                        <li>Локальные изображения из папки images используются в учебном проекте.</li>
+                        <li>Видеофайл применяется в учебных целях с упоминанием свободного источника в документации проекта.</li>
+                        <li>Использование контента в этом сайте ограничено академической демонстрацией без коммерческого распространения.</li>
+                    </ul>
+                </article>
+
+                <a href="#top" class="back-top">Наверх</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <span>Бельцы <span class="year"></span></span>
+            <span class="footer-meta">Локальных посещений в этом браузере: <strong data-visit-counter>0</strong></span>
+            <a class="footer-link" target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/">Внешний ресурс: MDN</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
